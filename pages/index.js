@@ -7,6 +7,9 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import alplinn from "../public/dev-alp-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import teamwork from "../public/teamwork.png";
 
 export default function Home() {
   return (
@@ -53,8 +56,79 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillTwitterCircle />
           </div>
-          <div className="relative bg-gradient-to-b from-midnight to-orangejam rounded-full">
-            <Image src={alplinn} />
+          <div className="relative mx-auto bg-gradient-to-b from-midnight to-orangejam rounded-t-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={alplinn} className="mt-3" />
+          </div>
+        </section>
+
+        {/* second page */}
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 mt-20">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi voluptatem{" "}
+              <span className="text-orangejam">eveniet</span>, nobis est
+              quisquam architecto velit id tempore temporibus vel officia unde
+              quam. Magni accusamus{" "}
+              <span className="text-orangejam">tagnuti</span> eius minima at
+              culpa sint.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              corrupti quibusdam incidunt tempore asperiores perferendis
+              consequatur laudantium facere placeat saepe numquam, quis nesciunt
+              vel voluptate iure cum facilis et vitae.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                maxime accusantium nam dolorum neque corporis cum non earum,
+                consequatur ad tempore ex dolore voluptas? Quidem delectus id
+                mollitia quas atque.
+              </p>
+              <h4 className="py-4 text-orangejam">Design tools I use</h4>
+              <p className="text-gray-600 py-1">Photoshop</p>
+              <p className="text-gray-600 py-1">Illustrator</p>
+              <p className="text-gray-600 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2">Clean Code</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                maxime accusantium nam dolorum neque corporis cum non earum,
+                consequatur ad tempore ex dolore voluptas? Quidem delectus id
+                mollitia quas atque.
+              </p>
+              <h4 className="py-4 text-orangejam">Design tools I use</h4>
+              <p className="text-gray-600 py-1">Photoshop</p>
+              <p className="text-gray-600 py-1">Illustrator</p>
+              <p className="text-gray-600 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={teamwork} width={100} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Excellent Team Member
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                maxime accusantium nam dolorum neque corporis cum non earum,
+                consequatur ad tempore ex dolore voluptas? Quidem delectus id
+                mollitia quas atque.
+              </p>
+              <h4 className="py-4 text-orangejam">Design tools I use</h4>
+              <p className="text-gray-600 py-1">Photoshop</p>
+              <p className="text-gray-600 py-1">Illustrator</p>
+              <p className="text-gray-600 py-1">Figma</p>
+            </div>
           </div>
         </section>
       </main>
